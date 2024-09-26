@@ -1,0 +1,131 @@
+/* General Reset and Font */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body and HTML Styling */
+body, html {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2;
+    width: 100%;
+    position: relative;
+    color: white;
+    background: url(bgleov.png) no-repeat center center/cover;
+}
+
+.background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Warna overlay gelap */
+    z-index: 1; /* Pastikan overlay berada di bawah konten */
+}
+
+/* Login Wrapper Styling */
+.login-wrapper {
+    display: flex;
+    width: 90%;
+    max-width: 900px;
+    height: 500px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #190f06;
+    z-index: 2; /* Higher z-index to appear above the overlay */
+}
+
+/* Left Section Styling */
+.left-section {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: white;
+}
+
+.left-section .logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 70px;
+    z-index: 3; /* Ensure logo is above the overlay */
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1), 0px 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.left-section .content {
+    text-align: center;
+}
+
+.left-section .content img {
+    width: 200px;
+    margin-bottom: auto;
+    border-radius: 10px; /* Rounded corners for the image */
+    z-index: 2; /* Higher z-index to appear above the overlay */
+}
+
+/* Right Section Styling */
+.right-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    z-index: 2; /* Higher z-index to appear above the overlay */
+}
+
+/* Login Box Styling */
+.login-box {
+    text-align: center;
+    width: 100%;
+    padding: 30px;
+}
+
+.login-box h2 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000; /* Darker text for contrast on white background */
+}
+
+.login-box form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-box input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.login-box button {
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: #190f06;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-box button:hover {
+    background-color: #190f06;
+}
+
+/* Footer Text Styling */
+.footer-text {
+    color:#190f06;
+}
